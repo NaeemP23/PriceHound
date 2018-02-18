@@ -20,22 +20,62 @@ input.mainsearch {
 	padding-left:30px;
 }
 
-.product{
-  width: 100%;
-  height: 15%;
+.homepage {
+	background-color: transparent;
 }
 
-.product_image{
-  width: 15%;
-  height: 15%;
+.product {
+	height: 15%;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.product_image {
+	border: solid black 4px;
+  	width: 25%;
+  	height: 25%;
 }
 
 .product_info {
-  width: 85%;
-  height: 15%;
+	font-size: 20px;
 }
 
-.product_info h1{
-  text-align: left;
-  font-size: 150%;
+.description_1 {
+	float: right;
+	margin-top: 50px; 
+	margin-right: 200px;
 }
+
+.description_2 {
+	float: right;
+	margin-top: 50px; 
+	margin-right: 200px;
+}
+
+.description_3 {
+	float: right;
+	margin-top: 50px; 
+	margin-right: 200px;
+
+}
+
+.description_4 {
+	float: right;
+	margin-top: 50px; 
+	margin-right: 200px;
+}
+
+.description_5 {
+	float: right;
+	margin-top: 50px; 
+	margin-right: 200px;
+}
+
+
+
+
+
+
+
+2
