@@ -1,0 +1,77 @@
+
+/* Home Page */
+.mainsearch {
+	text-align: center;
+	width: 100%;
+	margin-top: 40px;
+}
+
+form.mainsearch {
+	width: 50%;
+	display: inline-block;
+}
+input.mainsearch {
+	width: 100%;
+	height: 50px;
+	background: url(images/magnifier.png) no-repeat scroll 7px 7px;
+	padding-left: 30px;
+	border-radius: 10px;
+	color: #124699;
+}
+#searchButton {
+	display: inline-block;
+}
+
+/* Steals of the day and trending */
+.steals-container, .trending-container {
+	border-radius: 10px;
+	border: solid black 1px;
+	border-style: groove;
+	text-align: center;
+	height: 400px;
+	margin-top: 100px;
+	display: inline-block;
+	float: left;
+	padding-top: 1%;
+}
+.steals-container {
+	width: 35%;
+	margin-left: 8%;
+	margin-right: 0;
+}
+.trending-container {
+	width: 44%;
+	margin-left: 5%;
+	margin-right: 8%;
+}
+.steals-trending-title {
+	color: #124699;
+}
+ /*use as each steals container */
+.steals-entry {
+	width: 100%;;
+	margin: 30px;
+	text-align: left;
+}
+.steals-image-container {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	margin-right: 30px;
+	border: solid #124699 1px;
+}
+.steals-image {
+	display: block;
+	max-width: 98px;
+	max-height: 98px;
+	width: auto;
+	height: auto;
+}
+
+/*.steals-caption {
+	width: 66.6%;
+	height: 100%;
+	float: left;
+	margin-left: 10%;
+	text-align: center;
+}*/
