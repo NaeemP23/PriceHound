@@ -1,15 +1,26 @@
 body {
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #347484;
+	background: -webkit-linear-gradient(180deg, #7eaba4, #347484);
+	background: -moz-linear-gradient(180deg, #7eaba4, #347484);
+	background: -ms-linear-gradient(180deg, #7eaba4, #347484);
+	background: -o-linear-gradient(180deg, #7eaba4, #347484);
+	background: linear-gradient(180deg, #7eaba4, #347484);
 }
-
 .logo {
 	display: inline-block;
-	color: #124699;
+	color: white; /*#124699;*/
+	font-family: AudioWide;
 }
 
 .navbar {
 	top: 0;
-	/*background-color: #5688d8;*/
+	background-color: #347484;
 	padding-bottom: 20px;
-	border-bottom: solid black 1px;
-	margin-left: 15px; margin-right: 15px;
+	/*border-bottom: solid white 1px;*/
+	/*margin-left: 15px; margin-right: 15px;*/
 }

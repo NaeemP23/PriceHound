@@ -2,14 +2,6 @@ body {
 
 }
 
-.navbar {
-	border-bottom: solid black 1px;
-}
-
-.homepage {
-	background-color: transparent;
-}
-
 .product {
 	height: 15%;
 	margin-left: 50px;
@@ -36,7 +28,8 @@ body {
 /* Search bar - top */
 .topsearch {
 	margin: 0 auto;
-	padding-top: 10px;
+	margin-top: 10px;
+	padding-bottom: 0px;
 	width: 300px;
 }
 .topsearch-form {
@@ -48,20 +41,26 @@ body {
 }
 .filter {
 	display: inline-block;
+	margin: 10px;
 }
 .filter-button {
+	height: 30px;
+	border-radius: 4px;
 	padding-left: 5px; padding-right: 5px;
 	width: 100px;
 	cursor: pointer;
+	color: #2e4874;
 }
 .filter-choices {
 	display: none;
     position: absolute;
     z-index: 1;
     width: 100px;
-    border: solid black 1px;
+    border-radius: 2px;
+    background-color: white;
 }
 .filter-choices a {
 	display: block;
 	text-align: center;
+	color: #347484;
 }
