@@ -1,77 +1,26 @@
 body {
-
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #347484;
+	background: -webkit-linear-gradient(180deg, #7eaba4, #347484);
+	background: -moz-linear-gradient(180deg, #7eaba4, #347484);
+	background: -ms-linear-gradient(180deg, #7eaba4, #347484);
+	background: -o-linear-gradient(180deg, #7eaba4, #347484);
+	background: linear-gradient(180deg, #7eaba4, #347484);
 }
-
 .logo {
 	display: inline-block;
+	color: white; /*#124699;*/
+	font-family: AudioWide;
 }
 
 .navbar {
-	border-bottom: solid black 1px;
-}
-
-.mainsearch {
-	text-align: center;
-	width: 100%;
-	margin-top: 40px;
-}
-
-input.mainsearch {
-	width: 50%;
-	height: 50px;
-	background: url(images/magnifier.png) no-repeat scroll 7px 7px;
-	padding-left:30px;
-}
-
-/* use for steals of the day container */
-.content1 {
-	width: 35%;
-	height: 400px;
-	margin-top: 100px;
-	border-style: groove;
-	border: 1px solid black;
-	text-align: center;
-	float: left;
-	margin-right: 2.5%;
-	margin-left: 2.5%;
-	padding-top: 1%;
-}
-
-/* use for trending container */
-.content2 {
-	width: 55%;
-	height: 400px;
-	margin-top: 100px;
-	border-style: groove;
-	border: 1px solid black;
-	text-align: center;
-	float: left;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	padding-top: 1%;
-}
-
-/* use as each steals container */
-.Steals {
-	width: 100%;;
-	height: 33.3%;
-	padding: 5%;
-	float: left;
-	text-align: left;
-
-}
-
-.stealsImage {
-	width: 33.3%;
-	height: 100%;
-	float: left;
-	/*margin-right: 15%;*/
-}
-
-.stealsCaption {
-	width: 66.6%;
-	height: 100%;
-	float: left;
-	/*margin-left: 10%;*/
-	text-align: center;
+	top: 0;
+	background-color: #347484;
+	padding-bottom: 20px;
+	/*border-bottom: solid white 1px;*/
+	/*margin-left: 15px; margin-right: 15px;*/
 }

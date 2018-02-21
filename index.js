@@ -1,3 +1,13 @@
+// SEARCH
+function search(){
+  var query = document.getElementById(searchInput).text;
+  if (query=="dog collar" || query=="collar") {
+    document.getElementById(main).style.background = black;
+  }
+}
+
+
+// ===========
 function Product(type){
   this.type = type;
   this.color = "";

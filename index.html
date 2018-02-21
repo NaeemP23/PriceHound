@@ -11,7 +11,9 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href ="style.css" type="text/css">
+    <link rel="stylesheet" href ="homepage.css" type="text/css">
     <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
@@ -31,39 +33,46 @@
       </button>
     </div>
     <div class="container">
-    	<a href="index.html"><h3 class="nav navbar-left">PRICEHOUND</h3></a>
-        <div id="navbar" class="collapse navbar-collapse">
+    	<a href="index.html"><h3 class="logo nav navbar-left">PRICEHOUND</h3></a>
+<!--         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="">Sign In</a></li>
             <li><a href="">Sign Up</a></li>
           </ul>
-        </div>
+        </div> -->
      </div>
 </nav>
 
 <!--Search Bar-->
-<div class="mainsearch">
-	<input class="mainsearch" type="text" name="mainsearch" placeholder="Search..."<br>
+<div class="mainsearch" id="main">
+	<form class="mainsearch">
+		<input class="mainsearch-text" id="searchInput" type="text" name="mainsearch" placeholder="Search for a product...">
+	</form>
+	<a href="collar_results.html"><button class="mainsearch-submit" id="searchButton">Go</button></a>
 </div>
 
-<div class="content1"> <h1>Steals Of The Day!</h1>
-
-	<div class="Steals">
-		<div class="stealsImage">
-			<img src="images/dog_collar1.png" width="150" height="120"></div>
-			<div class="stealsCaption"><h5>Dog Collar</h5></div>
+<!--Steals of the Day-->
+<div class="steals-container"> 
+	<h1 class="steals-trending-title">Steals Of the Day</h1>
+	<div class="steals-entry">
+		<div class="steals-image-container"><img class="steals-image" src="images/dog_collar1.png"></div>
+		<div class="steals-caption">
+			<h5>Dog Collar</h5>
+		</div>
 	</div>
 
-	<div class="Steals">
-		<div class="stealsImage">
-			<img src="images/iphone_cover4.png" width="120" height="150"></div>
-			<div class="stealsCaption"><h5>iPhone</h5></div>
- </div>
-
+	<div class="steals-entry">
+		<div class="steals-image-container"><img class="steals-image" src="images/iphone_cover4.png"></div>
+		<div class="steals-caption">
+			<h5>iPhone</h5>
+		</div>
 	</div>
+</div>
 
-
-<div class="content2">Trending Now</div>
+<!--Trending Now-->
+<div class="trending-container">
+	<h1 class="steals-trending-title">Trending Now</h1>
+</div>
 
 
 <!-- Bootstrap core JavaScript
