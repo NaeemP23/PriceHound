@@ -7,7 +7,7 @@ body {
 	margin-left: 50px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	color: black;
+	color: #343635;
 }
 
 .product_image {
@@ -18,7 +18,8 @@ body {
 }
 
 .product_info {
-	font-size: 50px;
+	font-size: 25px;
+	color: #343635;
 }
 
 a {

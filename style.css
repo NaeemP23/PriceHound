@@ -1,7 +1,9 @@
 /*
-	orange: #FF8C00	rgb(255,140,0)
-	blues: http://www.color-hex.com/color-palette/55633
-	dark gray: #343635	(52,54,53);
+	top bar dark blue: #347484;
+	main page lighter blue: #85abb5;
+	orange accent: #d2522f;
+	light gray text: #d3d3d3
+	dark gray text: #343635;
 */
 body {
 	height: 100%;
@@ -10,11 +12,11 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	background: #347484;
-	background: -webkit-linear-gradient(180deg, #7eaba4, #347484);
-	background: -moz-linear-gradient(180deg, #7eaba4, #347484);
-	background: -ms-linear-gradient(180deg, #7eaba4, #347484);
-	background: -o-linear-gradient(180deg, #7eaba4, #347484);
-	background: linear-gradient(180deg, #7eaba4, #347484);
+	background: -webkit-linear-gradient(180deg, #85ABB5, #347484);
+	background: -moz-linear-gradient(180deg, #85ABB5, #347484);
+	background: -ms-linear-gradient(180deg, #85ABB5, #347484);
+	background: -o-linear-gradient(180deg, #85ABB5, #347484);
+	background: linear-gradient(180deg, #85ABB5, #347484);
 }
 .logo {
 	display: inline-block;
