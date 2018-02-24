@@ -11,7 +11,8 @@ body {
 }
 
 .product_image {
-	border: solid black 4px;
+	/*border: solid black 4px;*/
+	border-radius: 10px;
   	width: 25%;
   	height: 25%;
 }
@@ -32,16 +33,6 @@ a {
 	color: black;
 }
 
-/* Search bar - top */
-.topsearch {
-	margin: 0 auto;
-	margin-top: 10px;
-	padding-bottom: 0px;
-	width: 300px;
-}
-.topsearch-form {
-	width: 100%;
-}
 /* Filters */
 .filter-section {
 	text-align: center;

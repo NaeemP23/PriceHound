@@ -76,7 +76,7 @@ form.mainsearch {
 	height: 100px;
 	text-align: center;
 	margin-right: 30px;
-	border: solid #124699 1px;
+	/*border: solid #124699 1px;*/
 }
 .steals-image {
 	display: block;
@@ -84,6 +84,7 @@ form.mainsearch {
 	max-height: 98px;
 	width: auto;
 	height: auto;
+	border-radius: 10px;
 }
 
 /*.steals-caption {

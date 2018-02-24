@@ -11,13 +11,14 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href ="collar_product.css" type="text/css">
-    <link rel="stylesheet" href ="homepage.css" type="text/css">
+    <link rel="stylesheet" href ="style.css" type="text/css">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 
 <body class="searchpage">
@@ -42,14 +43,32 @@
     </div>
 </nav>
 
-
 <!-- Product -->
-<div class="main_prod">
+
+
+
+
+
+<div class="container">
+  <div class="row">
     <h1 class="product_info"> Pawsitive Co Durable Nylon Puppy and Dog Collar - Blue </h1>
-    <h1 class="main_price" <p> Price: <strike> &nbsp;$19.99&nbsp; </strike> &nbsp;$15.99 </p> </h1>
-	<img class="product_image" src="images/dog_collar1.png">
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="product_image" src="images/dog_collar1.png">
+      <div class="product_desc"><p>This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello.</p></div>
+    </div>
+    <div class="col-sm-8">
+        <h1 class="main_price" <p> Price: <strike> &nbsp;$19.99&nbsp; </strike> &nbsp;$15.99 </p> </h1>
+
+        <!--Chart.js-->
+        <div class="priceGraph">
+          <canvas id="priceGraph" width="400" height="200"></canvas>
+          <script type="text/javascript" src="collar_product.js"></script>
+        </div>
+    </div>
+  </div>
 </div>
-<p1 class="product_desc"> This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. This is a placeholder text for this product! It's cool, and blue, and a collar for dogs. Hello hello hello hello hello hello hello. </p1>
 
 <!-- Alternatives -->
 <div class="bottom_bar">
@@ -65,6 +84,8 @@
 <div class="price">
 	<h1 class="main_price" <p> <strike> &nbsp;$19.99&nbsp; </strike> </p> </h1>
 </div> -->
+
+
 
 
 <!-- Bootstrap core JavaScript
