@@ -4,6 +4,7 @@ function filterColor() {
 
 function filterPrice() {
 	document.getElementById("filter-price").classList.toggle("show");
+	var result = 
 }
 
 function filterSize() {
