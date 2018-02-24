@@ -1,82 +1,48 @@
-body {
-	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background: #347484;
-	background: -webkit-linear-gradient(180deg, #7eaba4, #347484);
-	background: -moz-linear-gradient(180deg, #7eaba4, #347484);
-	background: -ms-linear-gradient(180deg, #7eaba4, #347484);
-	background: -o-linear-gradient(180deg, #7eaba4, #347484);
-	background: linear-gradient(180deg, #7eaba4, #347484);
-}
-.logo {
-	display: inline-block;
-	color: white;
-	font-family: AudioWide;
-}
-
-.navbar {
-	top: 0;
-	background-color: #347484;
-	padding-bottom: 20px;
-}
-
-/* Search bar - top */
-.topsearch {
-	margin: 0 auto;
-	margin-top: 10px;
-	padding-bottom: 0px;
-	width: 300px;
-}
-.topsearch-form {
-	width: 100%;
-}
-
-.main_prod {
+/*.main_prod {
 	margin-top: 50px;
 	margin-left: 50px;
-}
+}*/
 
 .product_info {
+	margin-left: 50px;
 	font-size: 35px;
 }
 
 .product_image {
-	margin-top: 20px;
-	border: solid black 4px;
-	width: 40%;
-	height: 40%;
+	/*border: solid black 4px;*/
+	border-radius: 10px;
+	margin: 20px;
+	width: 80%;
 }
-
 .product_desc {
-	width: 550px;
-	margin-top: 50px;
-	margin-left: 50px;
-	display: inline-block;
-	border: solid black 2px;
-
+	/*width: 550px;*/
+	/*margin-top: 50px;*/
+	/*margin-left: 50px;*/
+	/*display: inline-block;*/
+	/*border: solid black 2px;*/
+	margin: 20px;
+	color: #d3d3d3;
 }
-
 .main_price {
-	float: right;
-	margin-top: 60px;
-	margin-right: 250px;
+	margin: 40px;
 	font-size: 30px;
+	color: ;
 }
-
 .bottom_bar {
 	margin-left: 50px;
 	margin-top: 150px;
 	margin-bottom: 80px;
 }
-
 .other_img {
 	width: 20%;
 	margin-right: 50px;
-	border: solid black 2px;
+	/*border: solid black 2px;*/
+	border-radius: 10px;
 }
 
+/* Price Graph */
+.priceGraph {
+	padding: 20px;
+	width: 100%;
 
-2
+}

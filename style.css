@@ -1,3 +1,8 @@
+/*
+	orange: #FF8C00	rgb(255,140,0)
+	blues: http://www.color-hex.com/color-palette/55633
+	dark gray: #343635	(52,54,53);
+*/
 body {
 	height: 100%;
 	-webkit-background-size: cover;
@@ -21,6 +26,15 @@ body {
 	top: 0;
 	background-color: #347484;
 	padding-bottom: 20px;
-	/*border-bottom: solid white 1px;*/
-	/*margin-left: 15px; margin-right: 15px;*/
+}
+
+/* Search bar - top */
+.topsearch {
+	margin: 0 auto;
+	margin-top: 10px;
+	padding-bottom: 0px;
+	width: 300px;
+}
+.topsearch-form {
+	width: 100%;
 }

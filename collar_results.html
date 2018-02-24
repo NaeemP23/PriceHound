@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Favicon-->
-	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<!-- <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
 	<!--CSS-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,7 +18,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="collar_results.js"></script>
 </head>
 
 <body class="homepage">
@@ -51,91 +50,103 @@
 
 <!-- Filter -->
 <div class="filter-section">
-  <div class="filter">
-    <button onclick="filterColor()" class="filter-button">Color</button>
-    <div id="filter-color" class="filter-choices">
-      <a href="#">Red</a>
-      <a href="#">Green</a>
-      <a href="#">Blue</a>
-    </div>
-  </div>
-
-  <div class="filter">
-    <button onclick="filterPrice()" class="filter-button">Price</button>
-    <div id="filter-price" class="filter-choices">
-      <a href="#">$0-20</a>
-      <a href="#">$21-40</a>
-      <a href="#">$40+</a>
-    </div>
-  </div>
-
-  <div class="filter">
-    <button onclick="filterSize()" class="filter-button">Size</button>
-    <div id="filter-size" class="filter-choices">
-      <a href="#">Small</a>
-      <a href="#">Medium</a>
-      <a href="#">Large</a>
-    </div>
-  </div>
+	<!-- Color Filter -->
+	<form>
+	<select id="color_filter">
+		<option selected="selected">
+			Select Color
+		</option>
+	  <option value="red">Red</option>
+	  <option value="pink">Pink</option>
+	  <option value="blue">Blue</option>
+	</select>
+	</form>
+	<!-- Price Filter -->
+	<form>
+	<select id="price_filter">
+		<option selected="selected">
+			Select Price Range
+		</option>
+	  <option value="zero">$0-10</option>
+	  <option value="ten">$10-20</option>
+	  <option value="twenty">$20+</option>
+	</select>
+	</form>
+	<!-- Go button -->
+	<button type="button" onclick="filter_ul()">Go!</button>
 </div>
-
 
 <!-- Search page -->
+<ul style="list-style-type:none"> <!-- styling should be done in css -->
+	<div id="product0"
+		<li>
+			<div class="description">
+				<h1 class="price" id="price0"> $17.99 </h1>
+			</div>
 
-<div class="description">
-  <h1 class="price"> $17.99 </h1>
-  <p1 class="changenprice"> Up 19% from last week! </p1>
-</div>
+			<div class="product">
+				<img class="product_image" src="images/dog_collar2.png">
+				<h1 class="product_info" id="name0"> Blueberry Pet Dog Collar - Blue </h1>
+			</div>
+		</li>
+	</div>
 
-<div class="product">
-  <img class="product_image" src="images/dog_collar2.png">
-  <h1 class="product_info"> Blueberry Pet Dog Collar - Blue </h1> 
-</div>
+	<div id="product1">
+		<li>
+			<div class="description">
+				<h1 class="price" id="price1"> $19.49 </h1>
+			</div>
 
-<div class="description">
-  <h1 class="price"> $19.49 </h1>
-  <p1 class="changenprice"> Down 16% from last week! </p1>
-</div>
+			<div class="product">
+				<img class="product_image" src="images/dog_collar3.png">
+				<h1 class="product_info" id="name1"> Blueberry Pet Dog Collar - Floral </h1>
+			</div>
+		</li>
+	</div>
 
-<div class="product">
-  <img class="product_image" src="images/dog_collar3.png">
-  <h1 class="product_info"> Blueberry Pet Dog Collar - Floral </h1> 
-</div>
+	<div id="product2">
+		<li>
+			<a href="collar_product.html">
+				<div class="description">
+					<h1 class="price" id="price2"> $15.99 </h1>
+				</div>
 
-<a href="collar_product.html">
-<div class="description">
-  <h1 class="price"> $15.99 </h1>
-  <p1 class="changenprice"> Down 20% from last week! </p1>
-</div>
+				<div class="product">
+					<img class="product_image" src="images/dog_collar1.png">
+					<h1 class="product_info" id="name2"> Pawsitive Co Durable Nylon Puppy and Dog Collar - Blue </h1>
+				</div>
+			</a>
+		</li>
+	</div>
 
-<div class="product">
-  <img class="product_image" src="images/dog_collar1.png">
-  <h1 class="product_info"> Pawsitive Co Durable Nylon Puppy and Dog Collar - Blue </h1> 
-</div>
-</a>
+	<div id="product3">
+		<li>
+			<div class="description">
+				<h1 class="price" id="price3"> $24.00 </h1>
+			</div>
 
-<div class="description">
-  <h1 class="price"> $24.00 </h1>
-  <p1 class="changenprice"> Down 9% from last week! </p1>
-</div>
+			<div class="product">
+			  <img class="product_image" src="images/dog_collar4.png">
+			  <h1 class="product_info" id="name3"> Nametag Dog Collar - Mint and Brown </h1>
+			</div>
+		</li>
+	</div>
 
-<div class="product">
-  <img class="product_image" src="images/dog_collar4.png">
-  <h1 class="product_info"> Nametag Dog Collar - Mint and Brown </h1> 
-</div>
+	<div id="product4">
+		<li>
+			<div class="description">
+			  <h1 class="price" id="price4"> $19.99 </h1>
+			</div>
 
-<div class="description">
-  <h1 class="price"> $19.99 </h1>
-  <p1 class="changenprice"> Up 20% from last week! </p1>
-</div>
-
-<div class="product">
-  <img class="product_image" src="images/dog_collar5.png">
-  <h1 class="product_info"> Blueberry Pet Dog Collar - Ice Blue </h1> 
-</div>
-
-
+			<div class="product">
+			  <img class="product_image" src="images/dog_collar5.png">
+			  <h1 class="product_info" id="name4"> Blueberry Pet Dog Collar - Ice Blue </h1>
+			</div>
+		</li>
+	</div>
+</ul>
 
 
 </body>
+<script src="index.js"></script>
 </html>
