@@ -7,36 +7,49 @@ var priceGraph = new Chart(ctx, {
         datasets: [{
             label: 'Price',
             data: [14,17,18,18,20,17,16],
-            backgroundColor: [
-                'rgba(255,255,255,0.0)',
-            ],
+            fill: false,
             borderColor: [
-                'rgba(255,255,255,1)',
+                'rgba(255,255,255,1.0)',
             ],
             borderWidth: 2,
-            lineTension: 0
+            lineTension: 0,
+            hoverRadius: 8,
         },
         {
             label: 'Average',
             data: [17,17,17,17,17,17,17],
-            backgroundColor: [
-                'rgba(255,140,0,0.0)',
-            ],
+            fill: false,
             borderColor: [
-                'rgba(255,140,0,1)',
+                'rgba(255,140,0,1.0)',
             ],
             borderWidth: 2,
-            lineTension: 0
+            lineTension: 0,
         }]
     },
-    // options: {
-    //     scales: {
-    //         yAxes: [{
-    //             ticks: {
-                    
-    //             }
-
-    //         }]
-    //     }
-    // }
+    options: {
+        responsive: true,
+        title:{
+            display:true,
+            text:'Price History'
+        },
+        tooltips: {
+            // mode: 'index',
+            // intersect: false,
+        },
+        hover: {
+            // mode: 'nearest',
+            // intersect: true,
+        },
+        scales: {
+            yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Price (USD)',
+                  },
+                }]
+            }
+        },
+        onHover: function(event,elements) {
+             // $("#canvas1").css("cursor", elements[0] ? "pointer" : "default");
+        }
 });

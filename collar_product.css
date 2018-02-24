@@ -26,7 +26,14 @@
 .main_price {
 	margin: 40px;
 	font-size: 30px;
-	color: ;
+}
+#sale-price {
+	color:#FF8C00;
+}
+#original-price {
+	color: #343635;
+	text-decoration: line-through;
+	text-decoration-color: #FF8C00;
 }
 .bottom_bar {
 	margin-left: 50px;
