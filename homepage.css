@@ -30,6 +30,10 @@ form.mainsearch {
     -webkit-appearance: none;
 }
 
+.signup {
+	color: white;
+	
+}
 /* Steals of the day and trending */
 .steals-container, .trending-container {
 	border-radius: 10px;
@@ -60,6 +64,27 @@ form.mainsearch {
 	margin-left: 5%;
 	margin-right: 8%;
 }
+
+.trending-entry{
+	float: left;
+	margin-left: 55px;
+	margin-top: 25px;
+}
+.trending-image-container {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	border: solid #124699 1px;
+}
+
+.trending-image {
+	display: block;
+	max-width: 200px;
+	max-height: 200px;
+	width: auto;
+	height: auto;
+}
+
 .steals-trending-title {
 	color: white;/*#124699;*/
 	font-family: AudioWide;
@@ -67,16 +92,15 @@ form.mainsearch {
 }
  /*use as each steals container */
 .steals-entry {
-	width: 100%;;
-	margin: 30px;
-	text-align: left;
+	float: left;
+	margin-left: 35px;
+	margin-top: 25px;
 }
 .steals-image-container {
 	width: 100px;
 	height: 100px;
 	text-align: center;
-	margin-right: 30px;
-	/*border: solid #124699 1px;*/
+	border: solid #124699 1px;
 }
 .steals-image {
 	display: block;
@@ -84,7 +108,6 @@ form.mainsearch {
 	max-height: 98px;
 	width: auto;
 	height: auto;
-	border-radius: 10px;
 }
 
 /*.steals-caption {
