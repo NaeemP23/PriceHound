@@ -32,7 +32,8 @@ form.mainsearch {
 
 .signup {
 	color: white;
-	
+	font-family: AudioWide;
+
 }
 /* Steals of the day and trending */
 .steals-container, .trending-container {

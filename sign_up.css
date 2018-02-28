@@ -30,6 +30,77 @@ body {
 	padding-bottom: 20px;
 }
 
+.signup{
+	margin-top: 5%;
+}
+
+.signup h1{
+	font-family: AudioWide;
+	float: center;
+	font-size: 50px;
+}
+
+.signup_boxes{
+	font-family: AudioWide;
+	font-size: 150%;
+	text-align: center;
+}
+
+.signup_box{
+	margin-bottom: 0px;
+}
+
+input[type=text] {
+    width: 25%;
+    box-sizing: border-box;
+		margin: 0 auto;
+		font-size: 70%;
+}
+
+input[type=password] {
+    width: 25%;
+    box-sizing: border-box;
+		margin: 0 auto;
+		font-size: 70%;
+}
+
+form
+{
+    align: center;
+}
+
+.go_button{
+	font-family: AudioWide;
+	margin-bottom: 30px;
+}
+
+.error{
+	font-family: AudioWide;
+	font-size: 130%;
+	color: #b72d2d;
+	text-align: center;
+}
+
+.success{
+	font-family: AudioWide;
+	font-size: 130%;
+	color: #388711;
+	text-align: center;
+}
+
+#wrapper {
+  width: 100%;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.go_button2{
+	font-family: AudioWide;
+	margin-bottom: 300px;
+}
+
 @import "compass/css3";
 
 $body-bg: #c1bdba;
