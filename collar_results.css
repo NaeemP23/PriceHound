@@ -9,9 +9,10 @@ body {
 	margin-bottom: 50px;
 	color: #343635;
 }
-
+.product-div {
+	background-color: transparent;
+}
 .product_image {
-	/*border: solid black 4px;*/
 	border-radius: 10px;
   	width: 25%;
   	height: 25%;
@@ -23,15 +24,24 @@ body {
 }
 
 a {
-    color:black;
+    color: #343635;
     text-decoration:none;
 }
-
 .description {
 	float: right;
 	margin-top: 50px;
 	margin-right: 200px;
-	color: black;
+	color: #343635;
+}
+.sale-price {
+	color: #d2522f;
+}
+.original-price, .marked-down-price {
+	color: #343635;
+}
+.marked-down-price {
+	text-decoration: line-through;
+	text-decoration-color: #d2522f;
 }
 
 /* Filters */

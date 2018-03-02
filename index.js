@@ -47,21 +47,21 @@ function getProductId(){
 var dog_collar1 = new Product('Dog Collar');
 dog_collar1.color = "blue";
 dog_collar1.price = 10.99;
-dog_collar1.name = "Pawsitive Co Durable Nylon Puppy and Dog Collar";
+dog_collar1.name = "Blueberry Pet Classic Solid Color Dog Collar";
 dog_collar1.id = 431;
 
 //https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sr_1_4?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-4&keywords=dog+collar
 var dog_collar2 = new Product('Dog Collar');
 dog_collar2.color = "pink";
 dog_collar2.price = 8.99;
-dog_collar2.name = "Blueberry Pet Classic Solid Color Dog Collar";
+dog_collar2.name = "Blueberry Pet Spring Scent Floral Collection - Dog Collar";
 dog_collar2.id = 432;
 
 //https://www.amazon.com/Blueberry-Pet-Patterns-Turquoise-Adjustable/dp/B06XNJ8XQN/ref=sr_1_6?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-6&keywords=dog+collar
 var dog_collar3 = new Product('Dog Collar');
 dog_collar3.color = "blue";
-dog_collar3.price = 13.99;
-dog_collar3.name = "Blueberry Pet Spring Scent Floral Collection - Dog Collar";
+dog_collar3.price = 15.99;
+dog_collar3.name = "Pawsitive Co Durable Nylon Puppy and Dog Collar";
 dog_collar3.id = 433;
 
 //https://www.amazon.com/LaReineTM-Personalized-Leather-Braided-Engraved/dp/B077SQDTC1/ref=sr_1_9?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-9&keywords=dog+collar
