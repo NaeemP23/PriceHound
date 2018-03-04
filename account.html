@@ -36,8 +36,46 @@
     	<a href="index.html"><h3 class="logo nav navbar-left">PRICEHOUND</h3></a>
          <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href=index.html""><div class="signup">Logout</div></a></li>
+            <li><a href="index.html"><div class="signup">Logout</div></a></li>
           </ul>
         </div>
      </div>
 </nav>
+
+<div class="container">
+<div class="account_info">
+	<h4> Welcome Back!</h4></div>
+	<div class="savings">
+	<h4> Current Savings: $2018.33 </h4>
+</div>
+
+
+<div class="tab">
+  <button class="tab_button" onclick="openCity(event, 'savings')" id="defaultOpen">savings</button>
+
+  <button class="tab_button" onclick="openCity(event, 'account settings')">account settings</button>
+
+  <button class="tab_button" onclick="openCity(event, 'purchases')">purchases</button>
+</div>
+
+<div id="savings" class="tabcontent">
+  <h3>savings</h3>
+  <p>savings</p>
+</div>
+
+<div id="account settings" class="tabcontent">
+  <h3>account settings</h3>
+  <p>account settings.</p>
+</div>
+
+<div id="purchases" class="tabcontent">
+  <h3>purchases</h3>
+  <p>purchases.</p>
+</div>
+
+<script src="account.js"></script>
+
+</div>
+
+
+</body>
