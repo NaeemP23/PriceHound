@@ -46,8 +46,13 @@ body {
 	text-align: center;
 }
 
-.signup_box{
+.signup_box2{
 	margin-bottom: 0px;
+}
+
+.signup_box{
+	margin-bottom: 25px;
+	height: 5%;
 }
 
 input[type=text] {

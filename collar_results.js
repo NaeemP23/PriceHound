@@ -1,24 +1,13 @@
 // SEARCH
-function Search(){
-  var query = document.getElementById("searchInput").value;
+function search(){
+  var query = document.getElementById("searchInput").text;
   console.log(query);
   if (query=="dog collar" || query=="collar") {
     return true;
   }
-  return false;
-}
-
-function Enter_Call(){
-  console.log('x');
-  // var input = document.getElementById("searchInput");
-  // input.addEventListener("keyup", function(event) {
-  //   console.log(event);
-  //   event.preventDefault();
-  //   if (event.keyCode === 13) {
-  //     console.log('llegó');
-  //     document.getElementById("searchButton").click();
-  //   }
-  // });
+  else{
+    return false;
+  }
 }
 
 
@@ -29,6 +18,31 @@ function Product(type){
   this.price = 0;
   this.name = "";
   this.id = -1;
+  this.getType = getProductType;
+  this.getColor = getProductColor;
+  this.getPrice = getProductPrice;
+  this.getName = getProductName;
+  this.getId = getProductId;
+}
+
+function getProductType(){
+  return this.type;
+}
+
+function getProductColor(){
+  return this.color;
+}
+
+function getProductPrice(){
+  return this.price;
+}
+
+function getProductName(){
+  return this.name;
+}
+
+function getProductId(){
+  return this.id;
 }
 
 // Dog Collars
@@ -108,3 +122,80 @@ iphone_cover5.name = "FLOVEME Luxury Slim Fit Gradual Colorful Gradient Change C
 iphone_cover5.id = 935;
 
 var iphone_covers = [iphone_cover1, iphone_cover2, iphone_cover3, iphone_cover4, iphone_cover5];
+
+// initializing
+function init(){
+  for(var i = 0; i < dog_collars.length; i++){
+    document.getElementById('price'+i).innerHTML = dog_collars[i].price;
+    document.getElementById('name'+i).innerHTML = dog_collars[i].name;
+    //document.getElementById('color'+1) = dog_collar+i.color;
+  }
+}
+
+// filtering function
+function filter_ul(){
+  console.log(document.getElementById("color_filter").value)
+  console.log(document.getElementById("price_filter").value)
+  var color = document.getElementById("color_filter").value;
+  var price = document.getElementById("price_filter").value;
+  var upper_bound = 0.0;
+  var lower_bound = 0.0
+  if(price == "zero"){
+    lower_bound = 0.0;
+    upper_bound = 10.0;
+  }
+  else if(price == "ten"){
+    lower_bound = 10.0;
+    upper_bound = 20.0;
+  }
+  else{
+    lower_bound = 20.0;
+    upper_bound = 1000000.0;
+  }
+  if(price == "Select Price Range" && color == "Select Color"){
+    for(i = 0; i < dog_collars.length; i++){
+      document.getElementById("product"+i).style.display = "block";
+    }
+  }
+  else if(price == "Select Price Range"){
+    //only check colors
+    for(i = 0; i < dog_collars.length; i++){
+      var curr_color = dog_collars[i].color;
+      var x = document.getElementById("product"+i);
+      if(curr_color == color){
+        x.style.display = "block";
+      }
+      else{
+        x.style.display = "none";
+      }
+    }
+  }
+  else if(color == "Select Color"){
+    // only check prices
+    for(i = 0; i < dog_collars.length; i++){
+      var curr_price = dog_collars[i].price;
+      var x = document.getElementById("product"+i);
+      if((curr_price >= lower_bound) && (curr_price <= upper_bound)){
+        x.style.display = "block";
+      }
+      else{
+        x.style.display = "none";
+      }
+    }
+  }
+  else{
+    for(i = 0; i < dog_collars.length; i++){
+      var curr_color = dog_collars[i].color;
+      var curr_price = dog_collars[i].price;
+      var x = document.getElementById("product"+i);
+      if((curr_color == color) && ((curr_price >= lower_bound) && (curr_price <= upper_bound))){
+        x.style.display = "block";
+      }
+      else{
+        x.style.display = "none";
+      }
+    }
+  }
+}
+
+init();

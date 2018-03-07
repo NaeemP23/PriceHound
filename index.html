@@ -44,11 +44,11 @@
 </nav>
 
 <!--Search Bar-->
-<div class="mainsearch" id="main">
+<div class="mainsearch">
 	<form class="mainsearch">
-		<input class="mainsearch-text" id="searchInput" type="text" name="mainsearch" placeholder="Search for a product...">
+		<input class="mainsearch-text" id="searchInput" type="text" value="" onkeypress="Enter_Call()">
 	</form>
-	<a href="collar_results.html"><button class="mainsearch-submit" id="searchButton">Go</button></a>
+	<a href="collar_results.html"><button class="mainsearch-submit" id="searchButton" onclick="return Search();">Go</button></a>
 </div>
 
 <!--Steals of the Day-->
@@ -126,4 +126,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 </body>
+<script src="index.js">
+</script>
 </html>

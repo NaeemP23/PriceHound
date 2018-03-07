@@ -25,13 +25,14 @@ add_user("EECS", "330", "eecs330", "password");
 
 function SignIn(){
   document.getElementById("error_message").innerHTML = "";
-  //fix with new User definition
+  document.getElementById("success_message").innerHTML = "";
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   var index = -1;
   if((username == "") || (password == "")){
     error_message = "Please enter all fields";
     document.getElementById("error_message").innerHTML = error_message;
+    return false;
   }
   else{
     for(i = 0; i < Nusers; i++){
@@ -43,21 +44,57 @@ function SignIn(){
     if(index == -1){
       error_message = "Username Not Found";
       document.getElementById("error_message").innerHTML = error_message;
+      return false;
     }
     else if(usernames[index].password != password){
       error_message = "Incorrect password";
       document.getElementById("error_message").innerHTML = error_message;
+      return false;
     }
     else if(usernames[index].password == password){
       success_message = "Correct password";
       document.getElementById("success_message").innerHTML = success_message;
+      return true;
     }
   }
+  return false;
 }
 
+var username = document.getElementById("username");
+username.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("submit_button").click();
+  }
+});
+
+var password = document.getElementById("password");
+password.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("submit_button").click();
+  }
+});
+
+var firstname = document.getElementById("name");
+firstname.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("submit_button").click();
+  }
+});
+
+var lastname = document.getElementById("lastname");
+lastname.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("submit_button").click();
+  }
+});
 
 function SignUp(){
   document.getElementById("error_message").innerHTML = "";
+  document.getElementById("success_message").innerHTML = "";
   var name = document.getElementById("name").value;
   var lastname = document.getElementById("lastname").value;
   var username = document.getElementById("username").value;
@@ -65,6 +102,7 @@ function SignUp(){
   if((name == "") || (lastname == "") || (username == "") || (password == "")){
     error_message = "Please enter all fields";
     document.getElementById("error_message").innerHTML = error_message;
+    return false;
   }
   else{
     var index = -1;
@@ -75,16 +113,18 @@ function SignUp(){
       }
     }
     if(index != -1){
-      // id = error_message
       error_message = "Username already taken. Please pick different username."
       document.getElementById("error_message").innerHTML = error_message;
+      return false;
     }
     else{
       add_user(name, lastname, username, password);
       success_message = "Thanks for registering!";
       document.getElementById("success_message").innerHTML = success_message;
+      return true;
     }
   }
+  return false;
 }
 
 // Sign In & Sign Up (https://codepen.io/ehermanson/pen/KwKWEv)
