@@ -11,7 +11,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href ="sign_up.css" type="text/css">
-    <link rel="stylesheet" href ="homepage.css" type="text/css">
+    <link rel="stylesheet" href ="style.css" type="text/css">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<!-- jQuery library -->
@@ -36,37 +36,40 @@
     	<a href="index.html"><h3 class="logo nav navbar-left">PRICEHOUND</h3></a>
          <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href=sign_in.html""><div class="signup">Sign In</div></a></li>
-            <li><a href="sign_up.html"><div class="signup">Sign Up</div></a></li>
+            <li><a href="sign_in.html"><div class="signup-button">Sign In</div></a></li>
+            <li><a href="sign_up.html"><div class="signup-button">Sign Up</div></a></li>
           </ul>
         </div>
      </div>
 </nav>
 
-<div class = "signup">
+<div class = "signup-container">
 	<h1>Sign In</h1>
 	<div class = "error">
 		<p id="error_message"></p>
 	</div>
-	<div class = "success">
+<!-- 	<div class = "success">
 		<p id="success_message"></p>
+	</div> -->
+	<div class = "signup_boxes">
+		<form>
+	        <div class = "signup_box2">
+				Username:
+				<input type="text" id="username" value""><br>
+			</div>
+			<div class = "signup_box2">
+				Password:
+				<input type="password" id="password" value""><br>
+			</div>
+		</form>
 	</div>
-		<div class = "signup_boxes">
-			<form>
-        <div class = "signup_box2">
-					Username:
-				  <input type="text" id="username" value""><br>
-				</div>
-				<div class = "signup_box2">
-				  Password:
-				  <input type="password" id="password" value""><br>
-				</div>
-			</form>
+	<div class="go_button2", id="wrapper">
+		<a href="account.html" onclick="return SignIn();"><button type="button" id="submit_button">Submit</button></a>
 	</div>
 </div>
-<div class="go_button2", id="wrapper">
-	<a href="account.html" onclick="return SignIn();"><button type="button" id="submit_button">Submit</button></a>
-</div>
+<br><br><br><br><br><br><br><br>
+
+
 </body>
 <script src="sign_up.js"></script>
 </html>
