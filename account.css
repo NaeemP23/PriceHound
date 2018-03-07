@@ -1,4 +1,22 @@
+.sidebar {
+	background-color: red;
+	float: left;
+}
+
+.tab_button {
+	float: left;
+}
+
 .account_info {
+	float: left;
   width: 100%;
   height: 15%;
+
+}
+
+.suggested {
+	margin-top: 20000px;
+}
+.other_img {
+	width: 20%;
 }

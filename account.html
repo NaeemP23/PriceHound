@@ -46,32 +46,40 @@
 <div class="account_info">
 	<h4> Welcome Back!</h4></div>
 	<div class="savings">
-	<h4> Current Savings: $2018.33 </h4>
+	<h4>Savings: $2018.33 </h4>
 </div>
 
-
+<div class="sidebar">
 <div class="tab">
-  <button class="tab_button" onclick="openCity(event, 'savings')" id="defaultOpen">savings</button>
-
-  <button class="tab_button" onclick="openCity(event, 'account settings')">account settings</button>
-
-  <button class="tab_button" onclick="openCity(event, 'purchases')">purchases</button>
+  <h1 id="defaultOpen"> These are your stats right now. </h1>
+  <button class="tab_button" onclick="openCity(event,'savings')"> Savings </button>
+  <button class="tab_button" onclick="openCity(event,'account settings')"> Account Settings </button>
+  <button class="tab_button" onclick="openCity(event,'purchases')"> Purchases </button>
 </div>
 
 <div id="savings" class="tabcontent">
-  <h3>savings</h3>
-  <p>savings</p>
+  <h3>Savings</h3>
+  <p>In 2018, you have saved $293.22. </p>
 </div>
 
 <div id="account settings" class="tabcontent">
-  <h3>account settings</h3>
-  <p>account settings.</p>
+  <h3>Account Settings</h3>
+  <p>Change password </break> Link your Amazon account.</p>
 </div>
 
 <div id="purchases" class="tabcontent">
-  <h3>purchases</h3>
-  <p>purchases.</p>
+  <h3>Purchases</h3>
+  <p>These are your previous purchases.</p>
 </div>
+</div>
+
+<!-- <div class="suggested">
+  <h1> Based on your previous purchases... </h1>
+  <a href="collar_product.html"><img class="other_img" src="images/dog_collar2.png"></a>
+  <a href="collar_product.html"><img class="other_img" src="images/dog_collar3.png"></a>
+  <a href="collar_product.html"><img class="other_img" src="images/dog_collar4.png"></a>
+  <a href="collar_product.html"><img class="other_img" src="images/dog_collar5.png"></a>
+</div> -->
 
 <script src="account.js"></script>
 
