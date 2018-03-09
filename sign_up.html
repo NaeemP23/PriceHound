@@ -36,14 +36,14 @@
     	<a href="index.html"><h3 class="logo nav navbar-left">PRICEHOUND</h3></a>
          <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="sign_in.html"><div class="signup">Sign In</div></a></li>
-            <li><a href="sign_up.html"><div class="signup">Sign Up</div></a></li>
+            <li><a href="sign_in.html"><div class="signup-button">Sign In</div></a></li>
+            <li><a href="sign_up.html"><div class="signup-button">Sign Up</div></a></li>
           </ul>
         </div>
      </div>
 </nav>
 
-<div class = "signup">
+<div class = "signup-container">
 	<h1>Sign Up</h1>
 	<div class = "error">
 		<p id="error_message"></p>
@@ -51,30 +51,32 @@
 	<div class = "success">
 		<p id="success_message"></p>
 	</div>
-		<div class = "signup_boxes">
-			<form>
-				<div class = "signup_box">
-					First Name:
-				  <input type="text" id="name" value=""><br>
-				</div>
-				<div class = "signup_box">
-				  Last name:
-				  <input type="text" id="lastname" value=""><br>
-				</div>
-				<div class = "signup_box">
-					Username:
-				  <input type="text" id="username" value=""><br>
-				</div>
-				<div class = "signup_box">
-				  Password:
-				  <input type="password" id="password" value=""><br>
-				</div>
-			</form>
+	<div class = "signup_boxes">
+		<form>
+			<div class = "signup_box">
+				First Name:
+			  <input type="text" id="name" value=""><br>
+			</div>
+			<div class = "signup_box">
+			  Last name:
+			  <input type="text" id="lastname" value=""><br>
+			</div>
+			<div class = "signup_box">
+				Username:
+			  <input type="text" id="username" value=""><br>
+			</div>
+			<div class = "signup_box">
+			  Password:
+			  <input type="password" id="password" value=""><br>
+			</div>
+		</form>
+	</div>
+	<div class="go_button", id="wrapper">
+		<a href="account.html" onclick="return SignUp();"><button type="button" id="submit_button">Submit</button></a>
 	</div>
 </div>
-<div class="go_button", id="wrapper">
-	<a href="account.html" onclick="return SignUp();"><button type="button" id="submit_button">Submit</button></a>
-</div>
+<br><br><br><br><br><br><br><br>
+
 </body>
 <script src="sign_up.js"></script>
 </html>

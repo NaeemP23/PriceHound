@@ -21,7 +21,7 @@ body {
 .logo {
 	display: inline-block;
 	color: white; /*#124699;*/
-	font-family: AudioWide;
+	font-family: 'AudioWide';
 }
 
 .navbar {
@@ -29,70 +29,73 @@ body {
 	background-color: #347484;
 	padding-bottom: 20px;
 }
-
-.signup{
-	margin-top: 5%;
+.signup-button {
+    font-family: 'Audiowide';
+    margin-top: 5%;
+    color: white;
 }
 
-.signup h1{
-	font-family: AudioWide;
+/* Sign up Form */
+.signup-container{
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px;
+  max-width: 450px;
+  border-radius: 10px;
+  background-color: white;
+}
+.signup-container h1{
+	font-family: 'AudioWide';
+  font-color: #343635;
 	float: center;
 	font-size: 50px;
 }
-
 .signup_boxes{
-	font-family: AudioWide;
-	font-size: 150%;
+	font-family: 'AudioWide';
+  color: #343635;
+	font-size: 18px;
 	text-align: center;
 }
-
 .signup_box2{
+  padding: 0px;
 	margin-bottom: 0px;
 }
-
 .signup_box{
 	margin-bottom: 25px;
 	height: 5%;
 }
-
 input[type=text] {
-    width: 25%;
     box-sizing: border-box;
+    border-radius: 10px;
 		margin: 0 auto;
-		font-size: 70%;
+		font-size: 16px;
+    font-family: 'Arial';
 }
-
 input[type=password] {
-    width: 25%;
     box-sizing: border-box;
+    border-radius: 10px;
 		margin: 0 auto;
-		font-size: 70%;
+		font-size: 16px;
+    font-family: 'Arial';
 }
-
 form
 {
     align: center;
 }
-
-.go_button{
-	font-family: AudioWide;
-	margin-bottom: 30px;
-}
-
 .error{
-	font-family: AudioWide;
+	font-family: 'Arial';
 	font-size: 130%;
 	color: #b72d2d;
 	text-align: center;
 }
-
-.success{
-	font-family: AudioWide;
+/*.success{
+	font-family: 'Arial';
 	font-size: 130%;
 	color: #388711;
 	text-align: center;
-}
+}*/
 
+/* Submit button */
 #wrapper {
   width: 100%;
   border: 0px;
@@ -100,10 +103,11 @@ form
   align-items: center;
   justify-content: center;
 }
-
-.go_button2{
-	font-family: AudioWide;
-	margin-bottom: 300px;
+#submit_button {
+  padding: 8px;
+  border-radius: 5px;
+  font-family: 'AudioWide';
+  color: #d2522f;
 }
 
 @import "compass/css3";

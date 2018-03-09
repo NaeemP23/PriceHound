@@ -52,8 +52,8 @@ function SignIn(){
       return false;
     }
     else if(usernames[index].password == password){
-      success_message = "Correct password";
-      document.getElementById("success_message").innerHTML = success_message;
+      // success_message = "Correct password";
+      // document.getElementById("success_message").innerHTML = success_message;
       return true;
     }
   }
