@@ -1,0 +1,17 @@
+.searchgo {
+	float: left;
+}
+
+.construction {
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	color: #343635;
+}
+
+#construction-dog {
+	width: 80%;
+	max-width: 500px;
+	border-radius: 20px;
+	margin: 20px;
+}
