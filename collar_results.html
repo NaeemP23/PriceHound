@@ -55,32 +55,31 @@
 </nav>
 <!-- Filter -->
 <div class="filter-section">
-	<!-- Color Filter -->
 	<form>
-	<select id="color_filter">
-		<option selected="selected">
-			Select Color
-		</option>
-	  <option value="red">Red</option>
-	  <option value="pink">Pink</option>
-	  <option value="blue">Blue</option>
-	</select>
+		<!-- Color Filter -->
+		<select class="filter-select" id="color_filter">
+			<option selected="selected">
+				Select Color
+			</option>
+		  	<option value="red">Red</option>
+		  	<option value="pink">Pink</option>
+		  	<option value="blue">Blue</option>
+		</select>
 
-	<!-- Price Filter -->
+		<!-- Price Filter -->
+		<select class="filter-select" id="price_filter">
+			<option selected="selected">
+				Select Price Range
+			</option>
+			  <option value="zero">$0-10</option>
+			  <option value="ten">$10-20</option>
+			  <option value="twenty">$20+</option>
+		</select>
 
-	<select id="price_filter">
-		<option selected="selected">
-			Select Price Range
-		</option>
-	  <option value="zero">$0-10</option>
-	  <option value="ten">$10-20</option>
-	  <option value="twenty">$20+</option>
-	</select>
-
-	<!-- Go button -->
-	<button type="button" onclick="filter_ul()">Go!</button>
+		<!-- Go button -->
+		<button class="filter-button" type="button" onclick="filter_ul()">Update</button>
+	</form>
 </div>
-</form>
 
 <!-- Search page -->
 <ul style="list-style-type:none"> <!-- styling should be done in css -->
