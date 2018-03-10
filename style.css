@@ -31,6 +31,17 @@ body {
 	padding-bottom: 20px;
 }
 
+/* Links styling */
+a {
+	color: white;
+}
+a:hover {
+	color: #d2522f;
+}
+a:active {
+	color: #d2522f;
+}
+
 /* Search bar - top */
 .topsearch {
 	margin: 0 auto;
@@ -40,4 +51,41 @@ body {
 }
 .topsearch-form {
 	width: 100%;
+}
+.navbar-elements-container {
+	margin: px;
+}
+.searchForm {
+	display: inline-block;
+}
+#searchButton {
+	display: inline-block;
+	margin-left: 10px;
+    height: 30px;
+    width: 50px;
+	background: white;
+    color: #d2522f;
+    border: solid 0px;
+    border-radius: 10px;
+}
+.topsearch-container {
+	margin-top: 10px;
+}
+#searchButton:hover {
+	background-color: #d2522f;
+	color: white;
+}
+
+/* Sign in sign up */
+.signup {
+	text-decoration: none;
+	padding: 5px;
+	padding-top: 15px;
+	padding-right: 15px;
+	color: white;
+	font-family: AudioWide;
+}
+
+.sign-container {
+	display: inline-block;
 }

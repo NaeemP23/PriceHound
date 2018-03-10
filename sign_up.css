@@ -5,30 +5,7 @@
 	light gray text: #d3d3d3
 	dark gray text: #343635;
 */
-body {
-	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background: #347484;
-	background: -webkit-linear-gradient(180deg, #85ABB5, #347484);
-	background: -moz-linear-gradient(180deg, #85ABB5, #347484);
-	background: -ms-linear-gradient(180deg, #85ABB5, #347484);
-	background: -o-linear-gradient(180deg, #85ABB5, #347484);
-	background: linear-gradient(180deg, #85ABB5, #347484);
-}
-.logo {
-	display: inline-block;
-	color: white; /*#124699;*/
-	font-family: 'AudioWide';
-}
 
-.navbar {
-	top: 0;
-	background-color: #347484;
-	padding-bottom: 20px;
-}
 .signup-button {
     font-family: 'Audiowide';
     margin-top: 5%;
