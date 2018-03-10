@@ -38,9 +38,9 @@
 
         <div class="topsearch nav navbar-nav">
           <form class="searchForm" class="topsearch-form form-inline">
-              <input class="form-control" type="text" placeholder="Search...">
+              <input id="searchInput" class="form-control" type="text" placeholder="Search...">
           </form>
-          <a href="collar_results.html"><button id="searchButton">Go</button></a>
+          <a href="collar_results.html"><button id="searchButton" onclick="return Search()">Go</button></a>
         </div>
 
         <div class="sign-container">
@@ -53,7 +53,6 @@
       </div>
     </div>
 </nav>
-
 <!-- Filter -->
 <div class="filter-section">
 	<!-- Color Filter -->
@@ -164,7 +163,7 @@
 	</div>
 </ul>
 
-
-</body>
 <script src="collar_results.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
