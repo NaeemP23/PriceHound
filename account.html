@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>PriceHound</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--Favicon-->
-	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<!--CSS-->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href ="style.css" type="text/css">
-    <link rel="stylesheet" href ="sign_up.css" type="text/css">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>PriceHound</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Favicon-->
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <!--CSS-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href ="account.css" type="text/css">
+  <link rel="stylesheet" href ="style.css" type="text/css">
+  <link rel="stylesheet" href ="homepage.css" type="text/css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="account.js"></script>
 </head>
 
 <body class="homepage">
@@ -54,46 +57,52 @@
     </div>
 </nav>
 
-<div class="container">
-<div class="account_info">
-	<h4> Welcome Back!</h4></div>
-	<div class="savings">
-	<h4>Savings: $2018.33 </h4>
+<div class="heading">
+	<h2> Welcome Back, eecs330!</h2>
+	<h4>Overall savings through PriceHound: $2018.33 </h4>
 </div>
 
-<div class="sidebar">
-<div class="tab">
-  <button class="tab_button" onclick="openCity(event, 'savings')" id="defaultOpen">Savings</button>
+<div class="information">
+  <div class="savings">
+    <h2>Savings</h2>
+    <h4>So far in 2018, you have saved $293.22. </h4>
+  </div>
 
-  <button class="tab_button" onclick="openCity(event, 'account settings')">Account Settings</button>
+  <div class="account_settings">
+    <h2>Account Settings</h2>
 
-  <button class="tab_button" onclick="openCity(event, 'purchases')">Purchases</button>
+    <h4>Change your account name: 
+      <form> First name: <input type="text">
+        Last name: <input type="text">
+        <input type="button" value="submit" onclick="clickMe()"/>
+      </form>
+
+    <br><br> Link your Amazon account <button> Here </button> </p>
+    <br /> Change your password: 
+      <form> Old password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text">
+        <br> New password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+        <br> Verify new password: &nbsp;<input type="text">
+        <br><br><input type="button" value="submit" onclick="clickMe()"/>
+      </form>
+    </h4>
+  </div>
+
+  <div class="purchases">
+    <h2>Purchases</h2>
+    <a href="collar_product.html"><img class="other_img" src="images/dog_collar1.png"></a>
+    <a href="construction.html"><img class="other_img" src="images/iphone_cover1.png"></a>
+    <a href="construction.html"><img class="other_img" src="images/iphone_cover3.png"></a>
+  </div>
 </div>
 
-<div id="savings" class="tabcontent">
-  <h3>Savings</h3>
-  <p>In 2018, you have saved $293.22. </p>
-</div>
 
-<div id="account settings" class="tabcontent">
-  <h3>Account Settings</h3>
-  <p>Change password </break> Link your Amazon account.</p>
-</div>
-
-<div id="purchases" class="tabcontent">
-  <h3>Purchases</h3>
-  <p>These are your previous purchases.</p>
-</div>
-
-<!-- <div class="suggested">
-  <h1> Based on your previous purchases... </h1>
-  <a href="collar_product.html"><img class="other_img" src="images/dog_collar2.png"></a>
-  <a href="collar_product.html"><img class="other_img" src="images/dog_collar3.png"></a>
-  <a href="collar_product.html"><img class="other_img" src="images/dog_collar4.png"></a>
-  <a href="collar_product.html"><img class="other_img" src="images/dog_collar5.png"></a>
-</div> -->
-
-<script src="account.js"></script>
-
+<div class="suggested">
+  <h2> Based on your previous purchases, consider these:</h2>
+  <a href="construction.html"><img class="other_img" src="images/iphone_cover2.png"></a>
+  <a href="construction.html"><img class="other_img" src="images/dog_collar3.png"></a>
+  <a href="construction.html"><img class="other_img" src="images/dog_collar4.png"></a>
+  <a href="collar_product.html"><img class="other_img" src="images/iphone_cover5.png"></a>
+</div> 
 
 </body>
+</html>
