@@ -25,7 +25,7 @@ add_user("EECS", "330", "eecs330", "password");
 
 function SignIn(){
   document.getElementById("error_message").innerHTML = "";
-  document.getElementById("success_message").innerHTML = "";
+  // document.getElementById("success_message").innerHTML = "";
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   var index = -1;
