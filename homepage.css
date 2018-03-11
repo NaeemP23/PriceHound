@@ -85,7 +85,6 @@ form.mainsearch {
 	width: 200px;
 	height: 200px;
 	text-align: center;
-	border: solid #124699 1px;
 }
 
 .trending-image {
@@ -131,61 +130,3 @@ form.mainsearch {
 	margin-left: 10%;
 	text-align: center;
 }*/
-
-.account_info {
-  width: 50%;
-  height: 15%;
-	font-family: AudioWide;
-	color: white;
-	float: left;
-
-}
-
-.savings {
-	float: right;
-	font-family: AudioWide;
-	color: white;
-}
-
-/* Style the tab */
-.tab {
-    float: left;
-    width: 30%;
-    height: 100%;
-		margin-top: 10%;
-}
-
-/* Style the buttons inside the tab */
-.tab_button {
-    display: block;
-    background-color: #347484;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab_button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab_button.active {
-    background-color: #347484;
-}
-
-/* Style the tab content */
-.tabcontent {
-		margin-top: 10%;
-    float: left;
-    padding: 0px 12px;
-
-    width: 70%;
-    border-left: none;
-    height: 100%;
-}

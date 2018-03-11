@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PriceHound</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Favicon-->
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<!--CSS-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href ="collar_results.css" type="text/css">
+     <link rel="stylesheet" href ="style.css" type="text/css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="homepage">
+
+<!--Top Bar-->
+<nav class="navbar navbar-static-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar" style="background-color:gray;"></span>
+        <span class="icon-bar" style="background-color:gray;"></span>
+        <span class="icon-bar" style="background-color:gray;"></span>
+      </button>
+    </div>
+    <div class="container">
+      <a href="index.html"><h3 class="logo nav navbar-left">PRICEHOUND</h3></a>
+      <div class="topsearch-container navbar-right">
+
+        <div class="topsearch nav navbar-nav">
+          <form class="searchForm" class="topsearch-form form-inline">
+              <input id="searchInput" class="form-control" type="text" placeholder="Search...">
+          </form>
+          <a href="collar_results.html"><button id="searchButton" onclick="return Search()">Go</button></a>
+        </div>
+
+        <div class="sign-container">
+          <ul class="nav navbar-nav">
+              <li><div class="signup"><a href="sign_in.html">Sign In</a></div></li>
+              <li><div class="signup"><a href="sign_up.html">Sign Up</a></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+</nav>
+<!-- Filter -->
+<div class="filter-section">
+	<form>
+		<!-- Color Filter -->
+		<select class="filter-select" id="color_filter">
+			<option selected="selected">
+				Select Color
+			</option>
+		  	<option value="red">Black</option>
+		  	<option value="pink">Silver</option>
+		  	<option value="blue">Neon</option>
+		</select>
+
+		<!-- Price Filter -->
+		<select class="filter-select" id="price_filter">
+			<option selected="selected">
+				Select Price Range
+			</option>
+			  <option value="zero">$0-10</option>
+			  <option value="ten">$10-20</option>
+			  <option value="twenty">$20+</option>
+		</select>
+
+		<!-- Go button -->
+		<button class="filter-button" type="button" onclick="filter_ul()">Update</button>
+	</form>
+</div>
+
+<!-- Search page -->
+<ul style="list-style-type:none"> <!-- styling should be done in css -->
+	<div id="product0" class="product-div">
+		<li>
+			<div class="description">
+				<h1 class="list-price" >
+					<span class="original-price">&nbsp;$<span id="price0"></span><span>
+            	</h1>
+			</div>
+
+			<div class="product">
+				<a href="construction.html"><img class="product_image" src="images/iphone_cover5.png">
+				<h1 class="product_info" id="name0"> iPhone 7 Cover - Neon </h1></a>
+			</div>
+		</li>
+	</div>
+
+	<div id="product1" class="product-div">
+		<li>
+			<div class="description">
+				<h1 class="list-price" >
+					<span class="original-price">&nbsp;$<span id="price1"></span><span>
+            	</h1>
+			</div>
+
+			<div class="product">
+				<a href="construction.html"><img class="product_image" src="images/iphone_cover3.png">
+				<h1 class="product_info" id="name1"> iPhone 7 Cover - Silver </h1></a>
+			</div>
+		</li>
+	</div>
+
+	<div id="product2" class="product-div">
+		<li>
+			<a href="collar_product.html">
+				<div class="description">
+					<h1 class="list-price" >
+						<span class="marked-down-price" >$19.99</span>
+						<span class="sale-price">&nbsp;$<span id="price2"></span><span>
+            		</h1>
+				</div>
+
+				<div class="product">
+					<a href="collar_product.html"><img class="product_image" src="images/iphone_cover4.png">
+					<h1 class="product_info" id="name2"> iPhone 7 Cover - Black </h1></a>
+				</div>
+			</a>
+		</li>
+	</div>
+
+	<div id="product3" class="product-div">
+		<li>
+			<div class="description">
+				<h1 class="list-price" >
+					<span class="original-price">&nbsp;$<span id="price3"></span><span>
+            	</h1>
+			</div>
+
+			<div class="product">
+			  <a href="construction.html"><img class="product_image" src="images/iphone_cover1.png">
+			  <h1 class="product_info" id="name3"> iPhone 7 Cover - Salmon </h1></a>
+			</div>
+		</li>
+	</div>
+
+	<div id="product4" class="product-div">
+		<li>
+			<div class="description">
+			  <h1 class="list-price" >
+					<span class="original-price">&nbsp;$<span id="price4"></span><span>
+            	</h1>
+			</div>
+
+			<div class="product">
+			  <a href="construction.html"><img class="product_image" src="images/iphone_cover2.png">
+			  <h1 class="product_info" id="name4"> iPhone 7 Cover - Granite Black </h1></a>
+			</div>
+		</li>
+	</div>
+</ul>
+
+<script src="collar_results.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

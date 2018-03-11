@@ -57,13 +57,64 @@
     </div>
 </nav>
 
-<div class="headding">
+<div class="heading">
 	<h1 class="sectionname"> Welcome Back, eecs330!</h1>
 	<h3 class="maintext">Through PriceHound, you've saved: $129.29 <br> </h3>
 </div>
 
 
-<div class="information">
+<div class="button_container">
+  <button class="button_info" onclick="buttons(event, 'Account Settings')" id="defaultOpen">Account Settings</button>
+  <button class="button_info" onclick="buttons(event, 'Purchases')">Purchases</button>
+  <button class="button_info" onclick="buttons(event, 'Suggested')">Suggested</button>
+</div>
+
+<div id="Account Settings" class="button_content">
+  <h3>Account Settings</h3>
+  <h4 class="content">Change your account name:
+    <form> <br>First name: <input type="text">
+              Last name: <input type="text">
+      <input type="button" value="submit" onclick="clickMe()"/>
+    </form>
+
+    <br><br><br> Link your Amazon account <button> here </button> </p>
+    <br><br> Change your password: <br>
+      <form> <br>Old password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text">
+        <br> New password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+        <br> Verify new password: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+        <br><br><input type="button" value="submit" onclick="clickMe()"/>
+      </form>
+
+      <br><br><br> Add a mobile number for shipping updates: <form> <br> <input type="text">
+      <input type="button" value="submit" onclick="clickMe()"/></form>
+    </h4>
+
+</div>
+
+<div id="Purchases" class="button_content">
+  <h3>Purchases</h3>
+
+  <div class="pic_containers"><a href="collar_product.html"><img class="other_img" src="images/dog_collar1.png" width="350" height="350"></a>
+  <h4 class="pic_content"> Blue Collar: $17 </h4> <br> </div>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/iphone_cover1.png"  width="350" height="350"></a>
+      <h4 class="pic_content"> iPhone 7 cover: $10 </h4> <br> </div>
+    <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/iphone_cover3.png"  width="350" height="350"></a>
+    <h4 class="pic_content"> iPhone 7 cover: $12 </h4> <br> </div>
+  </div>
+
+
+<div id="Suggested" class="button_content">
+  <h3>Suggested</h3>
+  <h2 class="suggested"> Based on your previous purchases, consider these:</h2>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/iphone_cover2.png" width="350" height="350"></a></div>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/dog_collar3.png" width="350" height="350"></a></div>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/dog_collar4.png" width="350" height="350"></a></div>
+  <div class="pic_containers"><a href="collar_product.html"><img class="other_img" src="images/iphone_cover5.png" width="350" height="350"></a></div>
+</div>
+
+
+
+<!-- <div class="information">
   <div class="savinggs">
     <h2 class="sectionname">Savings</h2>
     <h4 class="maintext">So far in 2018, you have saved $30.99. </h4>
@@ -72,7 +123,7 @@
   <div class="account_settings">
     <h2 class="sectionname">Account Settings</h2>
 
-    <h4 class="maintext">Change your account name: 
+    <h4 class="maintext">Change your account name:
       <form> <br>First name: <input type="text">
         Last name: <input type="text">
         <input type="button" value="submit" onclick="clickMe()"/>
@@ -92,7 +143,7 @@
 
   <div class="purchases">
     <h2 class="sectionname">Purchases</h2>
-    <a href="collar_product.html"><img class="other_img" src="images/dog_collar1.png"></a> 
+    <a href="collar_product.html"><img class="other_img" src="images/dog_collar1.png"></a>
     <h4 class="maintext"> Blue Collar $17 </h4> <br>
     <a href="construction.html"><img class="other_img" src="images/iphone_cover1.png"></a><br>
     <a href="construction.html"><img class="other_img" src="images/iphone_cover3.png"></a>
@@ -106,8 +157,8 @@
   <a href="construction.html"><img class="other_img" src="images/dog_collar3.png"></a>
   <a href="construction.html"><img class="other_img" src="images/dog_collar4.png"></a>
   <a href="collar_product.html"><img class="other_img" src="images/iphone_cover5.png"></a>
-</div> 
+</div>   -->
 
-<script src="index.js"></script>
+<script src="account.js"></script>
 </body>
 </html>
