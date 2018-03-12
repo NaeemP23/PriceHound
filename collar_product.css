@@ -3,7 +3,13 @@
 	margin-left: 50px;
 }*/
 
+.backbutton {
+	margin-left:160px;
+	text-decoration: underline;
+}
+
 .product_info {
+	margin-top: 20px;
 	margin-left: 25px;
 	font-size: 35px;
 }
@@ -58,3 +64,18 @@
 .searchgo {
 	float: left;
 }
+
+.amazonlink {
+	float:right;
+	margin-bottom: 50px;
+	margin-right:90px;
+	color: #343635;
+	font-size: 25px;
+	border-radius:5px;
+	background-color: white;
+}
+
+
+
+
+
