@@ -12,7 +12,7 @@ function Search(){
   else if (query == "iphone" || query == "cover" || query == "iphone cover"){
     var link = document.getElementById("href");  //.innerHTML = "href=collar_results.html";
     link.href = "iphone_results.html";
-    link.innerHTML = "ciphone_results.html";
+    link.innerHTML = "iphone_results.html";
     return true;
   }
   return false;
