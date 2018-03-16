@@ -20,39 +20,6 @@ function Product(type){
   this.id = -1;
 }
 
-// Dog Collars
-dog_collars = [];
-
-function add_dog_collar(color, price, name, id){
-  var dog_collar = new Product('Dog Collar');
-  dog_collar.color = color;
-  dog_collar.price = price;
-  dog_collar.name = name;
-  dog_collar.id = id;
-  dog_collars.push(dog_collar);
-}
-
-//https://www.amazon.com/Collar-Pawsitive-Durable-Collar-Chrome/dp/B079GRH9WX/ref=sr_1_2_sspa?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-2-spons&keywords=dog+collar&psc=1
-add_dog_collar("blue", 10.99, "Blueberry Pet Classic Solid Color Dog Collar", 1);
-//https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sr_1_4?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-4&keywords=dog+collar
-add_dog_collar("pink", 8.99, "Blueberry Pet Spring Scent Floral Collection - Dog Collar", 2);
-//https://www.amazon.com/Blueberry-Pet-Patterns-Turquoise-Adjustable/dp/B06XNJ8XQN/ref=sr_1_6?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-6&keywords=dog+collar
-add_dog_collar("blue", 15.99, "Pawsitive Co Durable Nylon Puppy and Dog Collar", 3);
-//https://www.amazon.com/LaReineTM-Personalized-Leather-Braided-Engraved/dp/B077SQDTC1/ref=sr_1_9?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-9&keywords=dog+collar
-add_dog_collar("blue", 11.77, "LaReine Personalized Leather Dog Collar", 4);
-//https://www.amazon.com/Blueberry-Pet-Reflective-Adjustable-Collars/dp/B00ZP4A75E/ref=sr_1_11?s=pet-supplies&ie=UTF8&qid=1518902724&sr=1-11&keywords=dog+collar
-add_dog_collar("blue", 13.99, "Blueberry Pet Soft & Comfy 3M Reflective Dog Collar", 5);
-
-add_dog_collar("purple", 9.98, "Deluxe Adjustable Thick Dog Collar - Purple", 6);
-
-add_dog_collar("pink", 3.08, "Sunward Dog Collar, Bow Tie Crystal Rhinestone Pet Collar Designer", 7);
-
-add_dog_collar("blue", 3.08, "Sunward Dog Collar, Bow Tie Crystal Rhinestone Pet Collar Designer", 8);
-
-add_dog_collar("brown", 21.49, "Youngster Age K9 Tactical Dog Collar Adjustable", 9);
-
-add_dog_collar("pink", 9.98, "Deluxe Adjustable Thick Dog Collar - Purple", 10);
-
 // iPhone X Covers
 
 var iphone_covers = [];
@@ -85,13 +52,11 @@ add_iphone_cover("blue", 14.99, "Silk iPhone 7/8 Wallet Case - VAULT Protective 
 //https://www.amazon.com/TORRAS-Silicone-Shockproof-Microfiber-Cushion/dp/B01ISMN7SI/ref=sr_1_3?ie=UTF8&qid=1520878901&sr=8-3&keywords=iphone+case+yellow
 add_iphone_cover("yellow", 16.99, "iPhone 6s, Liquid Silicone Rubber Shockproof Case with Soft Microfiber Cloth Cushion");
 
-
-
 // initializing
 function init(){
-  for(var i = 0; i < dog_collars.length; i++){
-    document.getElementById('price'+i).innerHTML = dog_collars[i].price;
-    document.getElementById('name'+i).innerHTML = dog_collars[i].name;
+  for(var i = 0; i < iphone_covers.length; i++){
+    document.getElementById('price'+i).innerHTML = iphone_covers[i].price;
+    document.getElementById('name'+i).innerHTML = iphone_covers[i].name;
   }
 }
 
@@ -99,7 +64,7 @@ function init(){
 function filter_ul(){
   console.log(document.getElementById("color_filter").value);
   console.log(document.getElementById("price_filter").value);
-  console.log(dog_collars.length);
+  console.log(iphone_covers.length);
   var color = document.getElementById("color_filter").value;
   var price = document.getElementById("price_filter").value;
   var upper_bound = 0.0;
@@ -117,14 +82,14 @@ function filter_ul(){
     upper_bound = 1000000.0;
   }
   if(price == "Select Price Range" && color == "Select Color"){
-    for(i = 0; i < dog_collars.length; i++){
+    for(i = 0; i < iphone_covers.length; i++){
       document.getElementById("product"+i).style.display = "block";
     }
   }
   else if(price == "Select Price Range"){
     //only check colors
-    for(i = 0; i < dog_collars.length; i++){
-      var curr_color = dog_collars[i].color;
+    for(i = 0; i < iphone_covers.length; i++){
+      var curr_color = iphone_covers[i].color;
       var x = document.getElementById("product"+i);
       if(curr_color == color){
         x.style.display = "block";
@@ -136,8 +101,8 @@ function filter_ul(){
   }
   else if(color == "Select Color"){
     // only check prices
-    for(i = 0; i < dog_collars.length; i++){
-      var curr_price = dog_collars[i].price;
+    for(i = 0; i < iphone_covers.length; i++){
+      var curr_price = iphone_covers[i].price;
       var x = document.getElementById("product"+i);
       if((curr_price >= lower_bound) && (curr_price <= upper_bound)){
         x.style.display = "block";
@@ -148,9 +113,9 @@ function filter_ul(){
     }
   }
   else{
-    for(i = 0; i < dog_collars.length; i++){
-      var curr_color = dog_collars[i].color;
-      var curr_price = dog_collars[i].price;
+    for(i = 0; i < iphone_covers.length; i++){
+      var curr_color = iphone_covers[i].color;
+      var curr_price = iphone_covers[i].price;
       var x = document.getElementById("product"+i);
       if((curr_color == color) && ((curr_price >= lower_bound) && (curr_price <= upper_bound))){
         x.style.display = "block";
