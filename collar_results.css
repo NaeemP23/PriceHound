@@ -7,8 +7,14 @@ body {
 	margin-left: 50px;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	width: 95%;
 	color: #343635;
 }
+
+.product h1{
+	width: 75%;
+}
+
 .product-div {
 	background-color: transparent;
 }

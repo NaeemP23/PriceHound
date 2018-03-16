@@ -40,7 +40,6 @@ add_dog_collar("brown", 21.49, "Youngster Age K9 Tactical Dog Collar Adjustable"
 
 add_dog_collar("pink", 9.98, "Deluxe Adjustable Thick Dog Collar - Purple", 10);
 
-<<<<<<< HEAD
 // iPhone X Covers
 
 var iphone_covers = [];
@@ -73,14 +72,10 @@ add_iphone_cover("blue", 14.99, "Silk iPhone 7/8 Wallet Case - VAULT Protective 
 //https://www.amazon.com/TORRAS-Silicone-Shockproof-Microfiber-Cushion/dp/B01ISMN7SI/ref=sr_1_3?ie=UTF8&qid=1520878901&sr=8-3&keywords=iphone+case+yellow
 add_iphone_cover("yellow", 16.99, "iPhone 6s, Liquid Silicone Rubber Shockproof Case with Soft Microfiber Cloth Cushion");
 
-
-=======
->>>>>>> 91e38f2643ebfea76aab20cb7a4eb68ab5fd2fc2
-
 // initializing
 function init(){
   for(var i = 0; i < dog_collars.length; i++){
-    document.getElementById('price'+i).innerHTML = dog_collars[i].price;
+    document.getElementById('price'+i).innerHTML = '$'+dog_collars[i].price;
     document.getElementById('name'+i).innerHTML = dog_collars[i].name;
   }
 }
