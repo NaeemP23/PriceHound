@@ -43,23 +43,30 @@
           <form class="searchForm" class="topsearch-form form-inline">
               <input id="searchInput" class="form-control" type="text" placeholder="Search...">
           </form>
-          <a id="href" href=""><button id="searchButton" onclick="return Search()">Go</button></a>
+          <a href="collar_results.html"><button id="searchButton" onclick="return Search()">Go</button></a>
         </div>
+
+        <!-- <div class="sign-container">
+          <ul class="nav navbar-nav">
+              <li><div class="signup"><a href="sign_in.html">Sign In</a></div></li>
+              <li><div class="signup"><a href="sign_up.html">Sign Up</a></div></li>
+          </ul>
+        </div> -->
+
       </div>
     </div>
 </nav>
-
-<!-- Content -->
 
 <div class="heading">
 	<h1 class="sectionname"> Welcome Back, eecs330!</h1>
 	<h3 class="maintext">Through PriceHound, you've saved: $129.29 <br> </h3>
 </div>
 
+
 <div class="button_container">
-  <button class="button_info" onclick="buttons(event, 'Account Settings')" id="defaultOpen"> Account Settings </button>
-  <button class="button_info" onclick="buttons(event, 'Purchases')"> Purchases</button>
-  <button class="button_info" onclick="buttons(event, 'Suggested')"> Suggested</button>
+  <button class="button_info" onclick="buttons(event, 'Account Settings')" id="defaultOpen">Account Settings</button>
+  <button class="button_info" onclick="buttons(event, 'Purchases')">Purchases</button>
+  <button class="button_info" onclick="buttons(event, 'Suggested')">Suggested</button>
 </div>
 
 <div id="Account Settings" class="button_content">
@@ -81,27 +88,50 @@
       <br><br><br> Add a mobile number for shipping updates: <form> <br> <input type="text">
       <input type="button" value="submit" onclick="clickMe()"/></form>
     </h4>
+
 </div>
 
 <div id="Purchases" class="button_content">
   <h3>Purchases</h3>
 
-  <div class="pic_containers"><a href="collar_product.html"><img class="other_img" src="images/dog_collar1.png" width="350" height="350"></a>
-  <h4 class="pic_content"> Blue Collar: $17 </h4> <br> </div>
-  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/iphone_cover1.png"  width="350" height="350"></a>
-      <h4 class="pic_content"> iPhone 7 cover: $10 </h4> <br> </div>
-    <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/iphone_cover3.png"  width="350" height="350"></a>
-    <h4 class="pic_content"> iPhone 7 cover: $12 </h4> <br> </div>
+  <div class="pic_containers">
+    <div class="pic_title"><h4> Teal Dog Collar </h4> </div>
+    <a href="collar_product.html"><img class="other_img" src="images/dog_collar1.png" width="250" height="250"></a>
+  <div class="pic_content"> Original Price: $17.99 <br> Price Purchased At: $14.99 <br> Date Purchased At: Dec. 19th, 2017 <br> Saved: $2.99 <font color="bff442">(16.7%)</font> <br>
+  </div>
+</div>
+
+  <div class="pic_containers">
+    <div class="pic_title"><h4> iPhone 7 Cover - Salmon </h4> </div>
+    <a href="construction.html"><img class="other_img" src="images/iphone_cover1.png"  width="250" height="250"></a>
+      <div class="pic_content"> Original Price: $8.99 <br> Price Purchased At: $6.99 <br> Date Purchased At: Oct. 21th, 2017 <br> Saved: $2.99 <font color="bff442"> (17.6%) </font> <br>
+  </div>
+</div>
+
+    <div class="pic_containers">
+      <div class="pic_title"><h4> iPhone 7 Cover - Silver </h4> </div>
+      <a href="construction.html"><img class="other_img" src="images/iphone_cover3.png"  width="250" height="250"></a>
+    <div class="pic_content"> Original Price: $9.99 <br> Price Purchased At: $6.99 <br> Date Purchased At: Jan. 10th, 2018 <br> Saved: $2.99 <font color="bff442">(17.6%)</font> <br> <br>
+    </div>
+  </div>
+
+  <div class="pic_containers">
+    <div class="pic_title"><h4> Dog Color - Silver </h4> </div>
+    <a href="construction.html"><img class="other_img" src="images/dog_collar4.png"  width="250" height="250"></a>
+  <div class="pic_content"> Original Price: $9.99 <br> Price Purchased At: $6.99 <br> Date Purchased At: Jan. 10th, 2018 <br> Saved: $2.99 <font color="bff442">(17.6%)</font> <br> <br>
+  </div>
+  </div>
+
   </div>
 
 
 <div id="Suggested" class="button_content">
   <h3>Suggested</h3>
   <h2 class="suggested"> Based on your previous purchases, consider these:</h2>
-  <a href="construction.html"><img class="other_img" src="images/iphone_cover2.png"></a>
-  <a href="construction.html"><img class="other_img" src="images/dog_collar3.png"></a>
-  <a href="construction.html"><img class="other_img" src="images/dog_collar4.png"></a>
-  <a href="collar_product.html"><img class="other_img" src="images/iphone_cover5.png"></a>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/iphone_cover2.png" width="250" height="250"></a></div>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/dog_collar3.png" width="250" height="250"></a></div>
+  <div class="pic_containers"><a href="construction.html"><img class="other_img" src="images/dog_collar4.png" width="250" height="250"></a></div>
+  <div class="pic_containers"><a href="collar_product.html"><img class="other_img" src="images/iphone_cover5.png" width="250" height="250"></a></div>
 </div>
 
 
@@ -152,6 +182,5 @@
 </div>   -->
 
 <script src="account.js"></script>
-<script src="index.js"></script>
 </body>
 </html>

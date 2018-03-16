@@ -8,17 +8,16 @@
 .sectionname {
 	font-family: AudioWide;
 	color: white;
-  margin-left: 50px;
+  margin-left: 20%;
 }
 
 .maintext {
-	color: #d3d3d3;
-  margin-left: 50px;
+	color: #343635;
+  margin-left: 20%;
 }
 
 .content {
   margin-left: 3%;
-  margin-bottom: 100px;
 }
 
 .information {
@@ -28,25 +27,27 @@
 
 .button_container {
     float: left;
-    margin-left: 100px;
-    margin-top: 60px;
+    /* margin-left: 20%; */
+		margin-left: auto;
+		margin-right: auto;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    font-family: AudioWide;
+    background-color: #ccc;
+    margin-top: 3%;
+		height: 500%;
 }
 
 .button_info {
     display: block;
-    background-color: #347484;
-    color: white;
-    padding: 20px 15px;
+    background-color: #ccc;
+    color: black;
+    padding: 22px 16px;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-    width: 300px;
+    width: 170px;
 }
 
 .button_info:hover {
@@ -54,15 +55,14 @@
 }
 
 .button_info.active {
-    background-color: #ccc;
+    background-color: #347484;
 }
 
 .button_content {
-  font-family: AudioWide;
     float: left;
     padding: 0px 12px;
     margin-top: 3%;
-    width: 60%;
+    width: 70%;
 }
 
 /* Change background color of buttons on hover */
@@ -77,13 +77,21 @@
 
 .pic_containers {
   float: left;
-  margin: 5%;
+  margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.pic_title {
+	text-align: center;
+	color: white;
 }
 
 .pic_content {
   margin-left: 3%;
-  text-align: center;
+  text-align: left;
   color: white;
+	margin-top: 3%;
 }
 
 .suggested {
@@ -92,7 +100,7 @@
   margin-left: 3%;
 }
 
-.other_img {
-  width: 30%;
-  margin: 20px;
+.saved {
+	color:green;
+	width:50px;
 }
