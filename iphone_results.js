@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // SEARCH
 function search(){
   var query = document.getElementById("searchInput").text;
@@ -11,6 +12,8 @@ function search(){
 }
 
 
+=======
+>>>>>>> 91e38f2643ebfea76aab20cb7a4eb68ab5fd2fc2
 // ===========
 function Product(type){
   this.type = type;
@@ -41,6 +44,7 @@ add_iphone_cover("transparent", 10.99, "ESR Slim Clear Soft TPU Cover for iPhone
 add_iphone_cover("black", 11.99, "Spigen Ultra Hybrid iPhone X Case with Air Cushion Technology and Hybrid Drop Protection");
 //https://www.amazon.com/iPhone-Protection-Cover-Tempered-Glass/dp/B0799LY8TP/ref=sr_1_4?s=wireless&ie=UTF8&qid=1518903295&sr=1-4&keywords=iphone+X+cover
 add_iphone_cover("purple", 13.99, "FLOVEME Luxury Slim Fit Gradual Colorful Gradient Change Color Ultra Thin Lightweight Electroplating Bumper Anti-Drop Clear Hard Back Cover Holder");
+<<<<<<< HEAD
 //https://www.amazon.com/Lavender-technext020-Shockproof-Resistance-Protective/dp/B00NM384TQ/ref=pd_sbs_107_5?_encoding=UTF8&pd_rd_i=B00NM384TQ&pd_rd_r=TSKD4GW7YS3THTYFR6R4&pd_rd_w=rc7SX&pd_rd_wg=1GP9Y&psc=1&refRID=TSKD4GW7YS3THTYFR6R4
 add_iphone_cover("purple", 7.99, "iPhone 6S Lavender Case, Shockproof Ultra Slim Fit Cover Shock Resistance - Purple");
 //https://www.amazon.com/Lavender-technext020-Shockproof-Resistance-Protective/dp/B00NM386JY/ref=pd_sbs_107_5?_encoding=UTF8&pd_rd_i=B00NM384TQ&pd_rd_r=TSKD4GW7YS3THTYFR6R4&pd_rd_w=rc7SX&pd_rd_wg=1GP9Y&refRID=TSKD4GW7YS3THTYFR6R4&th=1
@@ -51,6 +55,8 @@ add_iphone_cover("black", 17.99, "Spigen Slim Armor CS iPhone 7 Case / iPhone 8 
 add_iphone_cover("blue", 14.99, "Silk iPhone 7/8 Wallet Case - VAULT Protective Credit Card Grip Cover- Blue Jade");
 //https://www.amazon.com/TORRAS-Silicone-Shockproof-Microfiber-Cushion/dp/B01ISMN7SI/ref=sr_1_3?ie=UTF8&qid=1520878901&sr=8-3&keywords=iphone+case+yellow
 add_iphone_cover("yellow", 16.99, "iPhone 6s, Liquid Silicone Rubber Shockproof Case with Soft Microfiber Cloth Cushion");
+=======
+>>>>>>> 91e38f2643ebfea76aab20cb7a4eb68ab5fd2fc2
 
 // initializing
 function init(){

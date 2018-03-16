@@ -21,13 +21,13 @@ form.mainsearch {
 }
 .mainsearch-submit {
 	margin: 10px;
-    height: 40px;
-    width: 80px;
-    background: #347484;
-    color: white;
-    border: solid 0px;
-    border-radius: 10px;
-    -webkit-appearance: none;
+	height: 40px;
+	width: 80px;
+	background: #347484;
+	color: white;
+	border: solid 0px;
+	border-radius: 10px;
+	-webkit-appearance: none;
 }
 
 

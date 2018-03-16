@@ -3,33 +3,28 @@ function Search(){
   var temp_query = document.getElementById("searchInput").value;
   query = temp_query.toLowerCase();
   console.log(query);
-  if (query=="dog collar" || query=="collar") {
-    var link = document.getElementById("href");  //.innerHTML = "href=collar_results.html";
-    link.href = "collar_results.html";
-    link.innerHTML = "collar_results.html";
-    return true;
+  if (query == "dog collar" || query == "collar"){
+    var link = document.getElementById("searchForm");
+    link.action = "collar_results.html";
   }
-  else if (query == "iphone" || query == "cover" || query == "iphone cover"){
-    var link = document.getElementById("href");  //.innerHTML = "href=collar_results.html";
-    link.href = "iphone_results.html";
-    link.innerHTML = "ciphone_results.html";
-    return true;
+  else if (query == "cover" || query == "iphone cover" || query == "iphone case"){
+    var link = document.getElementById("searchForm");
+    link.action = "iphone_results.html";
   }
-  return false;
 }
 
-function Enter_Call(){
+
+function Enter_Call(e){
   console.log('x');
-  // var input = document.getElementById("searchInput");
-  // input.addEventListener("keyup", function(event) {
-  //   console.log(event);
-  //   event.preventDefault();
-  //   if (event.keyCode === 13) {
-  //     console.log('llegó');
-  //     document.getElementById("searchButton").click();
-  //   }
-  // });
+  var keynum;
+  if(window.event) { // IE
+    keynum = e.keyCode;
+  }
+  else if(e.which){ // Netscape/Firefox/Opera
+    keynum = e.which;
+  }
+  if(keynum == 13){
+    document.getElementById("searchButton").click();
+    // or Search(); or return Search();
+  }
 }
-
-
-// ===========

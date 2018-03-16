@@ -40,7 +40,7 @@
           <form class="searchForm" class="topsearch-form form-inline">
               <input id="searchInput" class="form-control" type="text" placeholder="Search...">
           </form>
-          <a href="collar_results.html"><button id="searchButton" onclick="return Search()">Go</button></a>
+          <a id="href" href="collar_results.html"><button id="searchButton" onclick="return Search()">Go</button></a>
         </div>
 
         <div class="sign-container">
@@ -89,7 +89,8 @@
 		<li>
 			<div class="description">
 				<h1 class="list-price" >
-					<span class="original-price">&nbsp;$<span id="price0"></span><span>
+					<span class="marked-down-price" >$15.99</span>
+					<span class="sale-price">&nbsp;$<span id="price0"></span><span>
             	</h1>
 			</div>
 
@@ -240,5 +241,7 @@
 </ul>
 
 <script src="collar_results.js"></script>
+<script src="index.js"></script>
+
 </body>
 </html>

@@ -12,8 +12,8 @@ var config = {
       lineTension: 0,
     }, {
       label: "Average",
-      borderColor: 'rgba(210, 82, 47, 1)',
-      backgroundColor: 'rgba(210, 82, 47, 1)',
+      borderColor: 'rgba(52, 116, 132, 1)',
+      backgroundColor: 'rgba(52, 116, 132, 1)',
       data: [17,17,17,17,17,17,17],
       fill: false,
     }]

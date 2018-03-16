@@ -11,9 +11,9 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href ="style.css" type="text/css">
-    <link rel="stylesheet" href ="sign_up.css" type="text/css">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href ="sign_up.css" type="text/css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
@@ -38,9 +38,9 @@
 
         <div class="topsearch nav navbar-nav">
           <form class="searchForm" class="topsearch-form form-inline">
-              <input class="form-control" type="text" placeholder="Search...">
+              <input id="searchInput" class="form-control" type="text" placeholder="Search...">
           </form>
-          <a href="collar_results.html"><button id="searchButton">Go</button></a>
+          <a id="href" href=""><button id="searchButton" onclick="return Search()">Go</button></a>
         </div>
 
         <div class="sign-container">
